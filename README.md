@@ -5,7 +5,7 @@
 
 ![layout](https://github.com/wangx1229/viewport/blob/master/imgs/px.png)
 
-### 手机设备像素
+### 手机设备独立像素
 
 iphone 6s手机像素分辨率375*667， 他的物理像素就是750px * 1334px。
 
@@ -53,12 +53,21 @@ dpr = 物理像素/设备像素
 
 原理： 1rem的大小指的就是html上font-size的大小。
 
-a/b = x/y   
+根据dpr，动态设置initial-scale，使得视觉视口和物理像素保持一致
 
-a=元素在设备上的宽度，b=设备的宽度，x=设计稿中元素的宽度，y=设计稿的宽度。 a = x * b / y
+然后将设备宽度设置为10rem， 那么1rem = 设备宽度/10 = font-size 大小
+
+假设 a=元素在设备上的宽度，b=设备的宽度，x=设计稿中元素的宽度，y=设计稿的宽度。 
+
+a/b = x/y ， a = x / y * b = x / y * 10rem = x / y * (10 * font-size) 
+
+每次自己计算a肯定很麻烦，可以使用sass函数封装fn，每次只需要传入x自动计算得到a。
 
 [很久以前手淘使用flexsible适配h5](https://github.com/amfe/article/issues/17)
 
 [关于meta详解](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta)
 
 [CSS Device Adaptation](https://drafts.csswg.org/css-device-adapt/#viewport-desc)
+
+[flexsible.js](https://github.com/amfe/lib-flexible/blob/2.0/index.js)
+
