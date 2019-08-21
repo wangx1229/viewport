@@ -64,7 +64,7 @@ a/b = x/y ， a = x / y * b = x / y * 10rem = x / y * (10 * font-size)
 每次自己计算a肯定很麻烦，可以使用sass函数封装fn，每次只需要传入x自动计算得到a。
 
 
-##### screen.width，window.innerWidth，document.documentElement.clientWidth
+##### 五、宽度的获取
 
 screen.width：屏幕宽度 在移动端就是设备的独立像素
 
