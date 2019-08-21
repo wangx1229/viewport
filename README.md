@@ -19,6 +19,8 @@ dpr = 物理像素/设备像素
 
 ### 移动端视口
 
+![viewport](https://github.com/wangx1229/viewport/blob/master/imgs/viewport.png)
+
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 
 ##### 一、布局视口 Layout Viewport
@@ -59,3 +61,4 @@ a=元素在设备上的宽度，b=设备的宽度，x=设计稿中元素的宽�
 
 [关于meta详解](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta)
 
+[CSS Device Adaptation](https://drafts.csswg.org/css-device-adapt/#viewport-desc)
