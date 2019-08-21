@@ -66,11 +66,13 @@ a/b = x/y ， a = x / y * b = x / y * 10rem = x / y * (10 * font-size)
 
 ##### 五、宽度的获取
 
-screen.width：屏幕宽度 在移动端就是设备的独立像素
+screen.width：移动端指设备的独立像素 PC端是屏幕的宽度
 
-window.innerWidth：视觉视口的宽度
+window.innerWidth：移动端指视觉视口的宽度 PC端是包含滚动条的视口宽度
 
-document.documentElement.clientWidth：布局视口的宽度
+document.documentElement.clientWidth：布局视口的宽度 也就是document中文档的宽度
+
+> 参考
 
 [很久以前手淘使用flexsible适配h5](https://github.com/amfe/article/issues/17)
 
