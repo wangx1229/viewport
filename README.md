@@ -2,6 +2,19 @@
 
 warn：以下内容全部为移动端知识点，只用于移动端，pc端可能会有所差异
 
+
+### 手机设备像素
+
+iphone 6s手机像素分辨率375*667， 他的物理像素就是750px * 1334px。
+
+### 手机物理像素
+
+iphone 6s手机像素分辨率750*1334， 他的物理像素就是750px * 1334px。
+
+### 设备像素比 Device Pixel Ratio
+
+dpr = 物理像素/设备像素
+
 ### 移动端视口
 
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
@@ -36,4 +49,7 @@ a/b = x/y
 
 a=元素在设备上的宽度，b=设备的宽度，x=设计稿中元素的宽度，y=设计稿的宽度。 a = x * b / y
 
+[很久以前手淘使用flexsible适配h5](https://github.com/amfe/article/issues/17)
+
+[关于meta详解](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta)
 
