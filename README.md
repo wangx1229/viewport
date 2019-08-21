@@ -42,7 +42,7 @@ dpr = 物理像素/设备像素
 例如，ip6s设备宽度为375，当设置intial-scale=1时，视觉视口变为375px，initial-scale=0.5时，视觉视口变为750px。
 
 ![layout](https://github.com/wangx1229/viewport/blob/master/imgs/visual.png)
-***
+
 ##### 三、理想视口 Ideal Viewport
 
 这里的理想视口，其实是理想化的布局视口。布局视口的最理想的值就是设备宽度，所以经常会看到在meta中设置width=device-width。
