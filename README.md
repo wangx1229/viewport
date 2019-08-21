@@ -2,6 +2,7 @@
 
 warn：以下内容全部为移动端知识点，只用于移动端，pc端可能会有所差异
 
+![layout](https://github.com/wangx1229/viewport/blob/master/imgs/px.png)
 
 ### 手机设备像素
 
@@ -27,6 +28,8 @@ dpr = 物理像素/设备像素
 
 注意，虽然width可以设置布局视口宽度，但实际上布局视口的宽度取决于视觉视口和布局视口中的最大值。即Math.max(Layout Viewport, Visual Viewport)
 
+![layout](https://github.com/wangx1229/viewport/blob/master/imgs/layout.png)
+
 ##### 二、视觉视口 Visual Viewport
 
 视觉视口，是我们通过手机屏幕所看到的视口范围。他和设备像素的物理像素相关联。
@@ -34,6 +37,8 @@ dpr = 物理像素/设备像素
 默认情况下也是980px。因为initial-scale=设备宽度/视觉视口，而每一台设备的设备度是固定的，所以我们可以通过initial-scale来设置视觉视口的大小。
 
 例如，ip6s设备宽度为375，当设置intial-scale=1时，视觉视口变为375px，initial-scale=0.5时，视觉视口变为750px。
+
+![layout](https://github.com/wangx1229/viewport/blob/master/imgs/visual.png)
 
 ##### 三、理想视口 Ideal Viewport
 
