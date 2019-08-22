@@ -61,32 +61,28 @@ dpr = 物理像素/设备像素
 
 a/b = x/y ， a = x / y * b = x / y * 10rem = x / y * (10 * font-size) 
 
-(```)
-  a/b = x/y
-  a = x / y * b
-  a = x / y * 10rem
-  a = x / y * (10 * font-size)
-(```)
+
+    a/b = x/y
+    a = x / y * b
+    a = x / y * 10rem
+    a = x / y * (10 * font-size)
+
 
 每次自己计算a肯定很麻烦，可以使用sass函数封装fn，每次只需要传入x自动计算得到a。
 
 2.vw布局
 
-(```)
-  vw   ： 视觉视口宽度的单位，总长100vm
-  vh   ： 视觉视口高度的单位，总长100vh
-  vmin ： 视觉视口高度和宽度最小值的的单位，总长100vh
-  vmax ： 视觉视口高度和宽度最大值的单位，总长100vh
+    vw   ： 视觉视口宽度的单位，总长100vm
+    vh   ： 视觉视口高度的单位，总长100vh
+    vmin ： 视觉视口高度和宽度最小值的的单位，总长100vh
+    vmax ： 视觉视口高度和宽度最大值的单位，总长100vh
   
-  a/b = x/y
-  a = x / y * b
-  a = x / y * 100vw
-(```)
-
-
-
+    a/b = x/y
+    a = x / y * b
+    a = x / y * 100vw
 
 ![vw支持度(can i use)](https://github.com/wangx1229/viewport/blob/master/imgs/vw.png)
+
 ##### 五、宽度的获取
 
 screen.width：移动端指设备的独立像素 PC端是屏幕的宽度
@@ -97,11 +93,11 @@ document.documentElement.clientWidth：布局视口的宽度 也就是document�
 
 > 参考
 
-[很久以前手淘使用flexsible适配h5](https://github.com/amfe/article/issues/17)
+> [很久以前手淘使用flexsible适配h5](https://github.com/amfe/article/issues/17)
 
-[关于meta详解](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta)
+> [关于meta详解](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta)
 
-[CSS Device Adaptation](https://drafts.csswg.org/css-device-adapt/#viewport-desc)
+> [CSS Device Adaptation](https://drafts.csswg.org/css-device-adapt/#viewport-desc)
 
 [flexsible.js](https://github.com/amfe/lib-flexible/blob/2.0/index.js)
 
