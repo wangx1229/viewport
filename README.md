@@ -49,6 +49,8 @@ dpr = 物理像素/设备像素
 
 ##### 四、适配布局
 
+假设 a=元素在设备上的宽度，b=设备的宽度，x=设计稿中元素的宽度，y=设计稿的宽度。
+
 1.rem布局
 
 原理： 1rem的大小指的就是html上font-size的大小。
@@ -57,13 +59,32 @@ dpr = 物理像素/设备像素
 
 然后将设备宽度设置为10rem， 那么1rem = 设备宽度/10 = font-size 大小
 
-假设 a=元素在设备上的宽度，b=设备的宽度，x=设计稿中元素的宽度，y=设计稿的宽度。 
-
 a/b = x/y ， a = x / y * b = x / y * 10rem = x / y * (10 * font-size) 
+
+(```)
+  a/b = x/y
+  a = x / y * b
+  a = x / y * 10rem
+  a = x / y * (10 * font-size)
+(```)
 
 每次自己计算a肯定很麻烦，可以使用sass函数封装fn，每次只需要传入x自动计算得到a。
 
-1.vw布局
+2.vw布局
+
+(```)
+  vw   ： 视觉视口宽度的单位，总长100vm
+  vh   ： 视觉视口高度的单位，总长100vh
+  vmin ： 视觉视口高度和宽度最小值的的单位，总长100vh
+  vmax ： 视觉视口高度和宽度最大值的单位，总长100vh
+  
+  a/b = x/y
+  a = x / y * b
+  a = x / y * 100vw
+(```)
+
+
+
 
 ![vw支持度(can i use)](https://github.com/wangx1229/viewport/blob/master/imgs/vw.png)
 ##### 五、宽度的获取
