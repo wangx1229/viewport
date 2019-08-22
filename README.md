@@ -63,7 +63,9 @@ a/b = x/y ， a = x / y * b = x / y * 10rem = x / y * (10 * font-size)
 
 每次自己计算a肯定很麻烦，可以使用sass函数封装fn，每次只需要传入x自动计算得到a。
 
+1.vw布局
 
+![vw支持度(can i use)](https://github.com/wangx1229/viewport/blob/master/imgs/vw.png)
 ##### 五、宽度的获取
 
 screen.width：移动端指设备的独立像素 PC端是屏幕的宽度
