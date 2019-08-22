@@ -59,9 +59,6 @@ dpr = 物理像素/设备像素
 
 然后将设备宽度设置为10rem， 那么1rem = 设备宽度/10 = font-size 大小
 
-a/b = x/y ， a = x / y * b = x / y * 10rem = x / y * (10 * font-size) 
-
-
     a/b = x/y
     a = x / y * b
     a = x / y * 10rem
